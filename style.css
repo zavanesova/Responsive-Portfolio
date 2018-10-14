@@ -21,7 +21,7 @@ header{
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 body{
-    background-image: url(../images/extra_clean_paper.png);
+    background-image: url(images/extra_clean_paper.png);
     height: 100%;
     background-color: lightgrey;
 }
@@ -120,7 +120,7 @@ img{
     display: inline-block;
     position: relative;
     left: 10px;
-    background-image: url(../images/image1.jpg);
+    background-image: url(images/image1.jpg);
     height: 250px;
     width: 250px;
     margin: 25px;
@@ -129,7 +129,7 @@ img{
     display: inline-block;
     position: relative;
     left: 10px;
-    background-image: url(../images/image2.jpg);
+    background-image: url(images/image2.jpg);
     height: 250px;
     width: 250px;
     margin: 25px;
@@ -137,7 +137,7 @@ img{
 .image3{
     position: relative;
     left: 10px;
-    background-image: url(../images/image3.jpg);
+    background-image: url(images/image3.jpg);
     height: 250px;
     width: 250px;
     margin: 25px;
@@ -208,38 +208,90 @@ input[type=submit] {
         right: 568px;
         margin-right: 0px;
     }
+    .about,
+    .portfolio,
+    .contact{
+        width: 67px;
+        font-size: 14px;
+    }
     .wrapper{
         position: relative;
         width: 70%;
-        margin: 20px 100px 10px 20px;
-        height: 900px;
+        margin: 20px 100px 100px 20px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .bio,
+    .bio2{
+        margin: 25px 15px 25px 15px;
     }
     .footer{
         position: relative;
         width: 100%;
     }
+    .nametext,
+    .email,
+    .message{
+        position: relative;
+        width: 82%;
+
+    }
+
 }
 @media screen and (max-width: 768px) {
     .name{
         position: relative;
-        right: px;
+        right: 360px;
         margin-right: 0px;
     }
     .wrapper{
         position: relative;
-        width: 100%;
-        margin: 15px;
+        width: 90%;
+        margin: 15px 15px 100px 15px;
     }
-}
-@media screnn and (max-width: 640px ) {
-    .name{
+    .nametext,
+    .email,
+    .message{
         position: relative;
-        width: 100%;
+        width: 82%;
+
+    }
+    
+}
+@media screen and (max-width: 640px ) {
+    .name{
+        display: inline-block;
+        z-index: 1;
+        position: static;
+        right: 0px;
+        top: 0px;
+        width: 588px;
+        height: 35px;
+        vertical-align: top;
+    }
+    .about,
+    .portfolio,
+    .contact{
+        width: 62px;
+    }
+    nav{
+        position: relative;
+        right: 200px;
     }
     .wrapper{
         position: relative;
-        width: 100%;
-        margin: 10px;
-        height: 1100px;
+        width: 92%;
+        margin: 15px 15px 100px 15px;  
     }
+    .image1,
+    .image2,
+    .image3{
+        margin: 15px 140px 15px 140px;
+    }
+    .nametext,
+    .email,
+    .message{
+        width: 82%;
+    }
+
 }
